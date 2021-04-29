@@ -5,13 +5,18 @@ font: normal normal 13px/16px "Open Sans", sans-serif;
 background: #dfdfdf;
 }
 
-.container{
+.container {
 padding: 20px;
 width: 300px;
 margin: 0 auto;
 margin-top: 40px;
 background: white;
-border-radius: 5px;}
+border-radius: 5px;
+}
+
+h2, p, .add-form {
+  text-align: center;
+}
 
 form {
 display: inline-block;
@@ -19,6 +24,7 @@ display: inline-block;
 
 input{
 padding: 4px 15px 4px 5px;
+width: 175px;
 }
 
 #button{
@@ -54,6 +60,7 @@ li:hover{
 li > crossOutButton {
 	background: none;
 	border: none;
+  margin-right: 40px;
 	float: right;
 	color: #025f70;
 	font-weight: 800;
