@@ -9,6 +9,7 @@ function newItem(){
      alert('You must write something!');
    } else {
      $('#list').append(li);
+     $('#input').val('');
    };
 
  //2. Crossing out an item from the list of items:
@@ -32,7 +33,7 @@ function newItem(){
     $('#list').sortable();
 };
 
-//5. Add item by hitting enter key 
+//5. Add item by hitting enter key
 $('#input').keypress(function (e) {
   if (e.which === 13) {
     $('#button').click();
