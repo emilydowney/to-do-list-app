@@ -28,6 +28,14 @@ function newItem(){
 
    crossOutButton.on('click', deleteItem);
 
- // 4. Reordering the items:
+ //4. Reordering the items:
     $('#list').sortable();
 };
+
+//5. Add item by hitting enter key 
+$('#input').keypress(function (e) {
+  if (e.which === 13) {
+    $('#button').click();
+    return false;
+  }
+});
